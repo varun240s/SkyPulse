@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-title">
+      <h1>Climate Change Analysis</h1>
+      <button id="theme-toggle">🌓</button>
+    </div>
+  </header>
+
+  <!-- Navigation Sidebar -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#" class="active">🏠 Dashboard</a></li>
+      <li><a href="#co2">🌫️ CO2 Emissions</a></li>
+      <li><a href="#temperature">🌡️ Temperature</a></li>
+      <li><a href="#deforestation">🌳 Deforestation</a></li>
+      <li><a href="#sea-level">🌊 Sea Level</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- CO2 Emission Section -->
+    <section class="co2-emission" id="co2">
+      <h2>CO2 Emission Levels Over Time</h2>
+      <canvas id="co2Chart"></canvas>
+    </section>
+
+    <!-- Temperature Trends -->
+    <section class="temperature-trends" id="temperature">
+      <h2>Global Temperature Trends</h2>
+      <div class="temperature-content">
+        <canvas id="temperatureChart"></canvas>
+        <div class="temperature-decomposition">
+          <h3>Seasonal Decomposition</h3>
+          <img src="public/data/processed/temp_decomposition.png" alt="Temperature Trend Analysis">
+          <p>Seasonal decomposition of global temperature trends</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deforestation Section -->
+    <section class="deforestation" id="deforestation">
+      <h2>Deforestation Over Time</h2>
+      <canvas id="deforestationChart"></canvas>
+    </section>
+
+    <!-- Sea Level Section -->
+    <section class="sea-level" id="sea-level">
+      <h2>Global Sea Level Rise</h2>
+      <canvas id="seaLevelChart"></canvas>
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+CLIMATE CHANGE ANALYSIS/
+├── directory_structure.txt
+├── directory_tree.py
+├── README.md
+├── requirements.txt
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── index
+│   ├── hooks
+│   │   ├── post-checkout
+│   │   ├── post-commit
+│   │   ├── post-merge
+│   │   ├── pre-push
+│   │   └── README.sample
+│   ├── info
+│   │   └── exclude
+│   ├── lfs
+│   │   └── tmp
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       └── heads
+│   │           └── main
+│   ├── objects
+│   │   ├── 9a
+│   │   │   └── 4a23bac27ef005486d9304347d6a73c17da51f
+│   │   ├── c4
+│   │   │   └── 2508cab2283a5d0a27f4e8fa50f9a16c35753b
+│   │   ├── e5
+│   │   │   └── 18314f54dfd13a25e219cfcebb4a5882e9816f
+│   │   ├── info
+│   │   └── pack
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       └── tags
+├── data
+│   ├── cleaned
+│   │   ├── cleaned_co2.csv
+│   │   ├── cleaned_deforestation.csv
+│   │   ├── cleaned_sea_level.csv
+│   │   └── cleaned_temperature.csv
+│   ├── formatted
+│   │   ├── co2_reformatted.csv
+│   │   ├── deforestation.json
+│   │   ├── sea_level_data_formatted.csv
+│   │   └── temperature_formatted.csv
+│   ├── predictions
+│   │   ├── arima_temperature_predictions.csv
+│   │   ├── prophet_co2_predictions.csv
+│   │   └── random_forest_predictions.csv
+│   ├── processed
+│   │   ├── annual_co2.csv
+│   │   ├── co2_temp_regression.csv
+│   │   ├── correlation_matrix.csv
+│   │   ├── decadal_temperature.csv
+│   │   ├── sea_level_data_formatted.csv
+│   │   └── temp_decomposition.png
+│   └── raw
+│       ├── co2_emissions.csv
+│       ├── deforestation.csv
+│       ├── sea_level_data.csv
+│       └── temperature.csv
+├── frontend
+│   ├── index.html
+│   ├── script.js
+│   ├── styles.css
+│   ├── assets
+│   │   └── temp_decomposition.png
+│   └── public
+│       └── data
+│           ├── predictions
+│           │   ├── arima_temperature_predictions.csv
+│           │   ├── arima_temperature_predictions.json
+│           │   ├── prophet_co2_predictions.csv
+│           │   ├── prophet_co2_predictions.json
+│           │   ├── random_forest_predictions.csv
+│           │   └── random_forest_predictions.json
+│           └── processed
+│               ├── temp_decomposition.png
+│               ├── csv
+│               │   ├── annual_co2.csv
+│               │   ├── co2_temp_regression.csv
+│               │   ├── correlation_matrix.csv
+│               │   ├── decadal_temperature.csv
+│               │   └── sea_level_data_formatted.csv
+│               └── json
+│                   ├── annual_co2.json
+│                   ├── co2_temp_regression.json
+│                   ├── correlation_matrix.json
+│                   ├── decadal_temperature.json
+│                   ├── deforestation.json
+│                   └── sea_level.json
+└── scripts
+    ├── deforestration_valid_code.py
+    ├── json_to_csv.py
+    ├── analysis
+    │   └── trend_analysis.py
+    ├── data_preparation
+    │   ├── co2_data_formatting.py
+    │   ├── data_cleaning.py
+    │   ├── deforestrations_data_formatting.py
+    │   ├── sea_level_format.py
+    │   └── temparature_data_format.py
+    └── models
+        └── model_training.py
